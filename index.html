@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <!-- Bootstrap CSS for styling -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Google Fonts preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts for Roboto and Lora -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS for additional styling -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="title"><h1>Weather Dashboard</h1></div>
+    <div>
+      <div class="container d-flex w-100">
+        <!-- Search input and button section -->
+        <div class="col-lg-3 md-3 mt-5">
+          <label for="city"><h2>Enter a city:</h2></label>
+          <input type="text" id="city" name="city" class="form-control mb-2" />
+          <button class="btn btn-info mb-2 col-12" id="search-button">
+            Search
+          </button>
+          <hr />
+          <!-- Previous searches section -->
+          <div class="clearfix" id="previous-searches"></div>
+        </div>
+        <!-- Weather display section -->
+        <div class="col-lg-9 col-md-3">
+          <!-- Current weather will be displayed here -->
+          <div
+            id="current-weather"
+            class="w-100 border border-dark-subtle mt-5 px-2"
+          ></div>
+          <!-- Forecast display section -->
+          <div id="forecast" class="w-100 d-flex mt-3 flex-fill">
+            <h3>5 Day Forecast:</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery for DOM manipulation and AJAX -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS for additional components -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS for weather functionality -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
