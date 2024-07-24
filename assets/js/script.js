@@ -60,56 +60,6 @@ $(document).ready(function () {
     }
   }
 
-  // Function to display weather data
-  // function displayWeather(data, city) {
-  //   const currentWeather = data.list[0];
-  //   const weatherIcon = `http://openweathermap.org/img/wn/${currentWeather.weather[0].icon}@2x.png`;
-  //   const now = new Date();
-  //   const options = {
-  //     weekday: 'long',
-  //     year: 'numeric',
-  //     month: 'long',
-  //     day: 'numeric',
-  //   };
-  //   const currentDate = now.toLocaleDateString('en-US', options);
-
-  //   // Update current weather display
-  //   $('#current-weather').html(`
-  //     <h2>${city} <img src="${weatherIcon}" alt="weather icon"></h2>
-  //     <p>${currentDate}</p>
-  //     <p>Temp: ${currentWeather.main.temp} °F</p>
-  //     <p>Wind: ${currentWeather.wind.speed} MPH</p>
-  //     <p>Humidity: ${currentWeather.main.humidity} %</p>
-  //   `);
-
-  //   forecastElement = $('#forecast');
-  //   forecastElement.empty();
-
-  //   // Update 5-day forecast display
-  //   for (let i = 0; i < data.list.length; i += 8) {
-  //     const forecast = data.list[i];
-  //     const date = new Date(forecast.dt_txt);
-  //     const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
-  //     const weatherIcon = `http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
-
-  //     forecastElement.append(`
-  //       <div class="forecast-card">
-  //         <p class="text-center"><b>${dayOfWeek}</b></p>
-  //         <p class="text-center">${date.toLocaleDateString()}</p>
-  //         <img src="${weatherIcon}" alt="weather icon">
-  //         <p>Temp: ${forecast.main.temp} °F</p>
-  //         <p>Wind: ${forecast.wind.speed} mph</p>
-  //         <p>Humidity: ${forecast.main.humidity} %</p>
-  //       </div>
-  //     `);
-  //   }
-
-  //   // Save search to local storage
-  //   saveSearch(city);
-  //   // Display updated previous searches
-  //   displayPreviousSearches();
-  // }
-
   function displayWeather(data, city) {
     const currentWeather = data.list[0];
     const weatherIcon = `http://openweathermap.org/img/wn/${currentWeather.weather[0].icon}@2x.png`;
