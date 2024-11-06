@@ -20,7 +20,7 @@
 
 To run this project, navigate to:
 
-To view project, navigate to https://rmburgos.github.io/weather_dashboard/
+To view project, navigate to <https://rachelb36.github.io/weather_dashboard/>
 
 ## Usage
 
